@@ -126,6 +126,24 @@ footer{background:#050505;color:#eee;padding:40px 5%;display:grid;grid-template-
         font-size: 14px;
     }
 }
+    /* FORCE TWO PRODUCT CARDS PER ROW */
+.products {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 25px !important;
+    max-width: 950px;
+    margin: auto;
+}
+
+.product {
+    width: 100%;
+    min-width: 0;
+}
+
+.product-art {
+    height: 320px;
+    overflow: hidden;
+}
 </style>
 </head>
 <body>
