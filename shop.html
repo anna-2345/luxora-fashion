@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | Luxora Fashion</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #090909;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d8a943;
+}
+
+.logo {
+    color: #d8a943;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #d8a943;
+}
+
+.heading {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.heading h1 {
+    color: #d8a943;
+    font-size: 38px;
+}
+
+.heading p {
+    color: #ccc;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #171717;
+    border: 1px solid #8d6b28;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #d8a943;
+}
+
+.card p {
+    color: #ddd;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: #d8a943;
+    color: #000;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: white;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #d8a943;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LUXORA</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="heading">
+    <h1>The Luxora Collection</h1>
+    <p>Discover timeless fashion. Wear Your Confidence.</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="elegant-evening-dress.png" alt="Elegant Evening Dress">
+        <h3>Elegant Evening Dress</h3>
+        <p>Women · Occasion Wear</p>
+        <p class="price">$59</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="classic-tailored-blazer.png" alt="Classic Tailored Blazer">
+        <h3>Classic Tailored Blazer</h3>
+        <p>Women · Formal Wear</p>
+        <p class="price">$85</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="little-explorer-set.png" alt="Little Explorer Set">
+        <h3>Little Explorer Set</h3>
+        <p>Kids · Everyday Wear</p>
+        <p class="price">$32</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="everyday-sneakers.png" alt="Everyday Sneakers">
+        <h3>Everyday Sneakers</h3>
+        <p>Shoes · Casual Style</p>
+        <p class="price">$49</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="signature-handbag.png" alt="Signature Handbag">
+        <h3>Signature Handbag</h3>
+        <p>Accessories · Handbags</p>
+        <p class="price">$68</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="gold-tone-jewellery-set.png" alt="Gold-Tone Jewellery Set">
+        <h3>Gold-Tone Jewellery Set</h3>
+        <p>Accessories · Jewellery</p>
+        <p class="price">$28</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="modern-casual-shirt.png" alt="Modern Casual Shirt">
+        <h3>Modern Casual Shirt</h3>
+        <p>Men · Casual Wear</p>
+        <p class="price">$39</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+    <div class="card">
+        <img src="chic-everyday-bag.png" alt="Chic Everyday Bag">
+        <h3>Chic Everyday Bag</h3>
+        <p>Accessories · Handbags</p>
+        <p class="price">$54</p>
+        <button onclick="alert('Contact Luxora to order this item.')">Enquire Now</button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Luxora Fashion. Wear Your Confidence.
+</footer>
+
+</body>
+</html>
